@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(199, 151, 245);
+    padding: 20px;
+}
+
+.descricao{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.secao{
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 2em;
+    align-self: center;
+}
+
+.texto p{
+    line-height: 2em;
+    margin-bottom: 1.5em;
+}
+
+.imagem{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+
+.imagem img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*media query para tornar a seção responsiva*/
+@media (max-width: 800px) {
+    .secao {
+        flex-direction: column;
+    }
+    .texto, .imagem{
+        padding: 10px;
+    }
+}
